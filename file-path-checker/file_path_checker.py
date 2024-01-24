@@ -8,9 +8,11 @@ If files are not found:
 Args:
     Accepts multiple str/pathlib.Path paths to files. (not folders)
         
-Version = 0.1.0
 
 """
+
+__version__ = "0.1.1"
+
 
 from pathlib import Path
 
@@ -34,7 +36,7 @@ def check_file_paths(*args) -> None:
             if not check_path.exists():
                 # If file path's parent folder doesn't exist, create it.
                 if not check_path.parent.is_dir():
-                    check_path.parent.mkdir()
+                    check_path.parent.mkdir(parents=True)
                 # Display messages to the user.
                 print(f"\n File: '{check_path.name}' not found.")
                 print("\n Place the file in the following directory and press Enter:")
