@@ -6,25 +6,25 @@ If files are not found:
     - It displays a message with the missing file name and path to the console.
     
 Args:
-    Accepts multiple str/pathlib.Path paths to files. (not folders)
+    Accepts multiple str/pathlib.Path paths to files.
         
 
 """
 
-__version__ = "0.1.1"
+__version__ = "1.0.0"
 
 
 from pathlib import Path
 
 
-def check_file_paths(*args) -> None:
+def check_paths(*args) -> None:
     """Checks to see if the passed files exists in their specific file paths.
     If files are not found:
     - It creates the paths (parent folder).
     - It displays a message with the missing file name and path to the console.
 
     Args:
-        Accepts multiple str/pathlib.Path paths to files. (not folders)
+        Accepts multiple str/pathlib.Path paths to files.
     """
 
     for file_path in args:

@@ -7,4 +7,4 @@ If files are not found:
 - It displays a message with the missing file name and path to the console.  
   
 Args:  
-Accepts multiple str/pathlib.Path paths to files. (not folders)
+Accepts multiple str/pathlib.Path paths to files.
