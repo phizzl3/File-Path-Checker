@@ -17,7 +17,7 @@ __version__ = "1.0.0"
 from pathlib import Path
 
 
-def check_paths(*args) -> None:
+def checkpaths(*args) -> None:
     """Checks to see if the passed files exists in their specific file paths.
     If files are not found:
     - It creates the paths (parent folder).
